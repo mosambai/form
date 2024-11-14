@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Form Validation</h1>
+        <!-- <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post"> -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="639ec6b2-2869-409c-b5f0-83d180d2f812">
+            <table class="form-table">
+                <tr id="email">
+                    <td>Email:</td>
+                    <td><input type="email" name="femail" required></td>
+                    <td><span class="formerror"></span></td>
+                </tr>
+                <tr id="phone">
+                    <td>Phone:</td>
+                    <td><input type="text" name="fphone" required></td>
+                    <td><span class="formerror"></span></td>
+                </tr>
+                <tr id="pass">
+                    <td>Password:</td>
+                    <td><input type="password" name="fpass" required></td>
+                    <td><span class="formerror"></span></td>
+                </tr>
+                <tr id="feedback">
+                    <td>Feedback:</td>
+                    <td><textarea name="ffeed" rows="4" cols="50" required></textarea></td>
+                    <td><span class="formerror"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="button" type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
